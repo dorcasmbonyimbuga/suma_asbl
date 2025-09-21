@@ -1,377 +1,459 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>SUMA ASBL — Site Vitrine</title>
+  <title>SUMA ASBL — Sote kwa Umoja Maendeleo na Amani</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.jpg" />
 
   <!-- FontAwesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+  <!-- Bootstrap & OwlCarousel -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
 
-<!-- TOP BAR -->
-<div class="bg-dark text-white py-2 small">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div>
-      <i class="fa fa-phone me-2"></i> +243 995 654 626 |
-      <i class="fa fa-phone ms-2 me-2"></i> +243 999 739 583 |
-      <i class="fa fa-envelope ms-2 me-2"></i> sumaasbl@gmail.com
-    </div>
-    <div>
-      <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-      <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-    </div>
-  </div>
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold text-teal" href="#">
-      <img src="assets/logo-suma.jpg" alt="SUMA Logo" width="50" height="50" class="me-2"> SUMA ASBL
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#programs">Programmes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#nanabim">Nanabim</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO SECTION with Carousel -->
-<section id="home" class="hero">
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active" style="background-image:url('assets/slide1.jpg')">
-        <div class="carousel-overlay">
-          <div class="container text-center text-white">
-            <h1 class="display-4 fw-bold">Bienvenue chez SUMA ASBL</h1>
-            <p class="lead mb-4">Sote Kwa Umoja Maendeleo Na Amani — Unité, solidarité et paix durable</p>
-            <a href="#programs" class="btn btn-success btn-lg me-2">Nos Programmes</a>
-            <a href="#don" class="btn btn-outline-light btn-lg">Faire un Don</a>
-          </div>
-        </div>
+  <!-- TOP BAR -->
+  <div class="topbar bg-dark text-white py-2 small fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div>
+        <i class="fa fa-phone me-2"></i> +243 995 654 626 | +243 999 739 583
+        <i class="fa fa-envelope ms-2 me-2"></i> sumaasbl@gmail.com
       </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item" style="background-image:url('assets/slide2.jpg')">
-        <div class="carousel-overlay">
-          <div class="container text-center text-white">
-            <h1 class="display-4 fw-bold">Unité & Solidarité</h1>
-            <p class="lead mb-4">Nous travaillons pour le bien-être des plus vulnérables</p>
-            <a href="#about" class="btn btn-success btn-lg me-2">Découvrir</a>
-            <a href="#contact" class="btn btn-outline-light btn-lg">Contactez-nous</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item" style="background-image:url('assets/slide3.jpg')">
-        <div class="carousel-overlay">
-          <div class="container text-center text-white">
-            <h1 class="display-4 fw-bold">Agissons Ensemble</h1>
-            <p class="lead mb-4">Éducation, santé, sécurité alimentaire et paix durable</p>
-            <a href="#don" class="btn btn-success btn-lg me-2">Faire un Don</a>
-            <a href="#programs" class="btn btn-outline-light btn-lg">Nos Programmes</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="py-5">
-  <div class="container">
-    <h2 class="mb-4 text-teal text-center">À propos de SUMA ASBL</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img1.jpg" class="card-img-top" alt="Vision">
-          <div class="card-body">
-            <h5 class="card-title">Vision</h5>
-            <p>Devenir un levier de développement dans l'unité et la solidarité tout en recherchant une paix durable.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img2.jpg" class="card-img-top" alt="Mission">
-          <div class="card-body">
-            <h5 class="card-title">Mission</h5>
-            <p>Assurer que les personnes vulnérables aient accès à l’éducation, la santé, la sécurité alimentaire et vivent dans l’unité et la paix.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img3.jpg" class="card-img-top" alt="Objectif">
-          <div class="card-body">
-            <h5 class="card-title">Objectif</h5>
-            <p>Contribuer à la promotion du bien-être et à l’épanouissement des groupes sociaux vulnérables par l’unité et la paix durable.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Valeurs -->
-    <div class="mt-5 text-center">
-      <h4 class="text-teal mb-3">Nos Valeurs</h4>
-      <div class="d-flex flex-wrap justify-content-center gap-2">
-        <span class="badge bg-success">Respect</span>
-        <span class="badge bg-success">Amour</span>
-        <span class="badge bg-success">Solidarité</span>
-        <span class="badge bg-success">Compétence</span>
-        <span class="badge bg-success">Intégrité</span>
-        <span class="badge bg-success">Professionnalisme</span>
-        <span class="badge bg-success">Honnêteté</span>
-        <span class="badge bg-success">Transparence</span>
-        <span class="badge bg-success">Responsabilité</span>
-        <span class="badge bg-success">Disponibilité</span>
+      <div>
+        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </div>
-</section>
 
-<!-- PROGRAMMES -->
-<section id="programs" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-4 text-teal text-center">Nos Programmes</h2>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img4.jpg" class="card-img-top" alt="Enfants">
-          <div class="card-body">
-            <h5 class="card-title">Protection des Enfants</h5>
-            <p>Centre d'encadrement et de rééducation (Nanabim Children's House), orphelinat et appui aux enfants démunis.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img5.jpg" class="card-img-top" alt="Femmes">
-          <div class="card-body">
-            <h5 class="card-title">Appui aux Femmes</h5>
-            <p>Programme <strong>Mwanamuke Tuinuane</strong> : formation, autonomisation et microprojets.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img6.jpg" class="card-img-top" alt="Veuves">
-          <div class="card-body">
-            <h5 class="card-title">Veuves et Vieillards</h5>
-            <p>Accompagnement social, soins et assistance alimentaire.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img7.jpg" class="card-img-top" alt="Jeunesse">
-          <div class="card-body">
-            <h5 class="card-title">Jeunesse & Développement</h5>
-            <p>Formation en entrepreneuriat et auto-prise en charge des jeunes.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/img8.jpg" class="card-img-top" alt="Éducation">
-          <div class="card-body">
-            <h5 class="card-title">Éducation</h5>
-            <p>Formations spirituelles, leadership, entrepreneuriat et alphabétisation.</p>
-          </div>
-        </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm main-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-teal" href="#">
+        <img src="./assets/img/logo.jpg" alt="SUMA Logo" width="40" height="40" class="me-2"> SUMA ASBL
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Programmes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#realisations">Réalisations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- NANABIM -->
-<section id="nanabim" class="py-5">
-  <div class="container">
-    <h2 class="mb-4 text-teal text-center">Nanabim Family Orphelinat</h2>
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6">
-        <img src="assets/img9.jpg" class="img-fluid rounded shadow" alt="Nanabim Orphelinat">
-      </div>
-      <div class="col-md-6">
-        <p><strong>Historique :</strong> Né d’activités évangéliques et caritatives, devenu orphelinat officiel en 2021 avec plusieurs dizaines d’enfants pris en charge.</p>
-        <p><strong>Difficultés :</strong> Alimentation, scolarité, eau, électricité, équipements insuffisants.</p>
-        <p><strong>Perspectives :</strong> Construction d’un centre scolaire et hospitalier, amélioration du cadre d’hébergement.</p>
-        <a class="btn btn-success" href="assets/ea4d4cbe-1c46-4afc-bfa2-8b02d67fd575.pdf" target="_blank">Voir le dossier complet (PDF)</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-4 text-teal text-center">Contact</h2>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Adresse</h5>
-          <p>RDC, Nord Kivu, Ville de Goma, Commune de Karisimbi, Quartier Bujovu, Avenue Bunyerezo N°17</p>
-          <h5>Téléphones</h5>
-          <p>+243 995 654 626<br>+243 999 739 583<br>+243 851 433 199<br>+243 810 800 702</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card shadow-sm p-3 h-100">
-          <h5>Email</h5>
-          <p><a href="mailto:sumaasbl@gmail.com">sumaasbl@gmail.com</a></p>
-          <h5>Réseaux sociaux</h5>
-          <p>
-            <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
-            <a href="#" class="me-2"><i class="fab fa-twitter fa-lg"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </nav>
 
 
-<!-- CONTACT -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-4 text-teal text-center">Contact</h2>
-    <div class="row g-4">
-      
-      <!-- Infos Contact -->
-      <div class="col-md-6">
-        <div class="card shadow-sm p-4 h-100">
-          <h5>Adresse</h5>
-          <p>RDC, Nord Kivu, Ville de Goma, Commune de Karisimbi,<br>Quartier Bujovu, Avenue Bunyerezo N°17</p>
-          
-          <h5>Téléphones</h5>
-          <p>+243 995 654 626<br>+243 999 739 583<br>+243 851 433 199<br>+243 810 800 702</p>
-          
-          <h5>Email</h5>
-          <p><a href="mailto:sumaasbl@gmail.com">sumaasbl@gmail.com</a></p>
-          
-          <h5>Réseaux sociaux</h5>
-          <p>
-            <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
-            <a href="#" class="me-2"><i class="fab fa-twitter fa-lg"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-          </p>
-        </div>
-      </div>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-      <!-- Formulaire de contact -->
-      <div class="col-md-6">
-        <div class="card shadow-sm p-4 h-100">
-          <h5>Envoyez-nous un message</h5>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image:url('./assets/img/s1.jpg')">
+          <div class="carousel-overlay">
+            <div class="container text-center text-white">
+              <h1 class="display-4 fw-bold">Bienvenue chez SUMA ASBL</h1>
+              <p class="lead mb-4 text-white">Sote Kwa Umoja Maendeleo Na Amani — Unité, solidarité et paix durable</p>
+              <a href="#programs" class="btn btn-success btn-lg me-2">Nous soutenir</a>
+              <a href="#don" class="btn btn-outline-light btn-lg">Faire un Don</a>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Votre email" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-success">Envoyer</button>
-          </form>
+          </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image:url('./assets/img/s2.jpg')">
+          <div class="carousel-overlay">
+            <div class="container text-center text-white">
+              <h1 class="display-4 fw-bold">Unité & Solidarité</h1>
+              <p class="lead mb-4 text-white">Nous travaillons pour le bien-être des plus vulnérables</p>
+              <a href="#about" class="btn btn-success btn-lg me-2">Nous soutenir</a>
+              <a href="#contact" class="btn btn-outline-light btn-lg">Contactez-nous</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image:url('./assets/img/s3.jpg')">
+          <div class="carousel-overlay">
+            <div class="container text-center text-white">
+              <h1 class="display-4 fw-bold">Agissons Ensemble</h1>
+              <p class="lead mb-4 text-white">Éducation, santé, sécurité alimentaire et paix durable</p>
+              <a href="#don" class="btn btn-success btn-lg me-2">Faire un Don</a>
+              <a href="#programs" class="btn btn-outline-light btn-lg">Nous soutenir</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<!-- FOOTER -->
-<footer class="footer mt-5">
-  <div class="footer-overlay">
-    <div class="container py-5">
-      <div class="row text-white">
-        <!-- Colonne 1: À propos -->
-        <div class="col-md-4 mb-4">
-          <h5 class="fw-bold">À propos</h5>
-          <p class="small">
-            SUMA ASBL — Sote Kwa Umoja Maendeleo Na Amani<br>
-            Unité, solidarité et paix durable.<br>
-            Nous œuvrons pour l’éducation, la santé et la sécurité alimentaire.
-          </p>
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-teal text-center">À propos de SUMA ASBL</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/img/vision.jpg" class="card-img-top" alt="Vision">
+            <div class="card-body">
+              <h5 class="card-title">Vision</h5>
+              <p>Devenir un levier de développement dans l'unité et la solidarité tout en recherchant une paix durable.
+              </p>
+            </div>
+          </div>
         </div>
-
-        <!-- Colonne 2: Programmes -->
-        <div class="col-md-4 mb-4">
-          <h5 class="fw-bold">Programmes</h5>
-          <ul class="list-unstyled small">
-            <li><a href="#programs" class="footer-link">Protection des enfants</a></li>
-            <li><a href="#programs" class="footer-link">Appui aux femmes</a></li>
-            <li><a href="#programs" class="footer-link">Veuves & vieillards</a></li>
-            <li><a href="#programs" class="footer-link">Jeunesse & développement</a></li>
-            <li><a href="#programs" class="footer-link">Éducation</a></li>
-          </ul>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/img/mission.jpg" class="card-img-top" alt="Mission">
+            <div class="card-body">
+              <h5 class="card-title">Mission</h5>
+              <p>Assurer que les personnes vulnérables aient accès à l’éducation, la santé, la sécurité alimentaire et
+                vivent dans l’unité et la paix.</p>
+            </div>
+          </div>
         </div>
-
-        <!-- Colonne 3: Contact -->
-        <div class="col-md-4 mb-4">
-          <h5 class="fw-bold">Contact</h5>
-          <p class="small mb-1"><i class="fa fa-map-marker-alt me-2"></i>Goma, RDC</p>
-          <p class="small mb-1"><i class="fa fa-phone me-2"></i>+243 995 654 626</p>
-          <p class="small mb-1"><i class="fa fa-envelope me-2"></i>
-            <a href="mailto:sumaasbl@gmail.com" class="footer-link">sumaasbl@gmail.com</a>
-          </p>
-          <div class="mt-2">
-            <a href="#" class="footer-social me-2"><i class="fab fa-facebook fa-lg"></i></a>
-            <a href="#" class="footer-social me-2"><i class="fab fa-twitter fa-lg"></i></a>
-            <a href="#" class="footer-social"><i class="fab fa-instagram fa-lg"></i></a>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/img/obj.jpg" class="card-img-top" alt="Objectif">
+            <div class="card-body">
+              <h5 class="card-title">Objectif</h5>
+              <p>Contribuer à la promotion du bien-être et à l’épanouissement des groupes sociaux vulnérables par
+                l’unité et la paix durable.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="text-center text-white mt-4 small">
-        © <span id="year"></span> SUMA ASBL — Tous droits réservés
+      <!-- Valeurs -->
+      <div class="mt-5 text-center">
+        <h4 class="text-teal mb-3">Nos Valeurs</h4>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="badge bg-success">Respect</span>
+          <span class="badge bg-success">Amour</span>
+          <span class="badge bg-success">Solidarité</span>
+          <span class="badge bg-success">Compétence</span>
+          <span class="badge bg-success">Intégrité</span>
+          <span class="badge bg-success">Professionnalisme</span>
+          <span class="badge bg-success">Honnêteté</span>
+          <span class="badge bg-success">Transparence</span>
+          <span class="badge bg-success">Responsabilité</span>
+          <span class="badge bg-success">Disponibilité</span>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <!-- PROGRAMMES -->
+  <section id="programs" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-teal text-center">Nos programmes</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/img/enfant.jpg" class="card-img-top" alt="Enfants">
+            <div class="card-body">
+              <h5 class="card-title">Protection des Enfants</h5>
+              <p>Centre d'encadrement et de rééducation (Nanabim Children's House), orphelinat et appui aux enfants
+                démunis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/img/femme.jpg" class="card-img-top" alt="Femmes">
+            <div class="card-body">
+              <h5 class="card-title">Appui aux Femmes</h5>
+              <p>Programme <strong>Mwanamuke Tuinuane</strong> : formation, autonomisation et microprojets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/img/veuves.jpg" class="card-img-top" alt="Veuves">
+            <div class="card-body">
+              <h5 class="card-title">Veuves et Vieillards</h5>
+              <p>Accompagnement social, soins et assistance alimentaire.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/img/jeune.jpg" class="card-img-top" alt="Jeunesse">
+            <div class="card-body">
+              <h5 class="card-title">Jeunesse & Développement</h5>
+              <p>Formation en entrepreneuriat et auto-prise en charge des jeunes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./assets/img/education.jpg" class="card-img-top" alt="Éducation">
+            <div class="card-body">
+              <h5 class="card-title">Éducation</h5>
+              <p>Formations spirituelles, leadership, entrepreneuriat et alphabétisation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NANABIM -->
+  <section id="nanabim" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-teal text-center">Nanabim Family Orphelinat</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>Historique & réalisations :</strong> Nanabim est né d'activités évangéliques et caritatives
+            (2016–2020) et s'est développé en orphelinat en 2021 avec aujourd'hui plusieurs dizaines d'enfants pris en
+            charge.</p>
+
+          <p><strong>Difficultés :</strong> alimentation, scolarité, accès à l'eau et à l'électricité, équipements
+            insuffisants.</p>
+        </div>
+        <div class="col-md-6 grid-2">
+          <div class="card small">
+            <h4>Critères d'admission</h4>
+            <ul>
+              <li>Être orphelin de père et/ou mère ou en situation de précarité.</li>
+              <li>Présentation de documents (acte de naissance, certificat médical, etc.).</li>
+            </ul>
+          </div>
+
+          <div class="card small">
+            <h4>Perspectives</h4>
+            <ul>
+              <li>Construction d'un centre scolaire et hospitalier dédié.</li>
+              <li>Amélioration du cadre d'hébergement.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <!-- REALISATIONS -->
+  <section id="realisations" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-teal text-center">Nos Réalisations</h2>
+      <div class="owl-carousel owl-theme">
+
+        <!-- Item 1 -->
+        <div class="card shadow-sm">
+          <img src="./assets/img/real1.jpg" class="card-img-top" alt="Réalisation 1">
+          <div class="card-body">
+            <h5 class="card-title">Formation en leadership</h5>
+            <p class="card-text">Une session organisée pour 50 jeunes afin de renforcer leurs capacités.</p>
+            <p class="small"><i class="fa fa-map-marker-alt me-1"></i> Goma — <i class="fa fa-calendar me-1"></i> Juin
+              2024</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="card shadow-sm">
+          <img src="./assets/img/real2.jpg" class="card-img-top" alt="Réalisation 2">
+          <div class="card-body">
+            <h5 class="card-title">Appui aux veuves</h5>
+            <p class="card-text">Distribution alimentaire et assistance sanitaire.</p>
+            <p class="small"><i class="fa fa-map-marker-alt me-1"></i> Rutshuru — <i class="fa fa-calendar me-1"></i>
+              Avril 2024</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="card shadow-sm">
+          <img src="./assets/img/real3.jpg" class="card-img-top" alt="Réalisation 3">
+          <div class="card-body">
+            <h5 class="card-title">Nanabim Orphelinat</h5>
+            <p class="card-text">Construction de dortoirs pour accueillir les enfants.</p>
+            <p class="small"><i class="fa fa-map-marker-alt me-1"></i> Goma — <i class="fa fa-calendar me-1"></i> Déc.
+              2023</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PERSPECTIVES -->
+  <section id="perspectives" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-teal text-center">Perspectives</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 p-3">
+            <h5><i class="fa fa-school me-2 text-teal"></i> Construction d’un centre scolaire</h5>
+            <p>Un projet éducatif pour offrir aux enfants un environnement d’apprentissage digne.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 p-3">
+            <h5><i class="fa fa-hospital me-2 text-teal"></i> Création d’un centre hospitalier</h5>
+            <p>Un espace médical pour répondre aux besoins de santé des communautés vulnérables.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 p-3">
+            <h5><i class="fa fa-seedling me-2 text-teal"></i> Développement agricole</h5>
+            <p>Promotion de la sécurité alimentaire grâce à des projets agricoles communautaires.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-teal text-center">Contact</h2>
+      <div class="row g-4">
+
+        <!-- Infos Contact -->
+        <div class="col-md-6">
+          <div class="card shadow-sm p-4 h-100">
+            <h5>Adresse</h5>
+            <p>RDC, Nord Kivu, Ville de Goma, Commune de Karisimbi,<br>Quartier Bujovu, Avenue Bunyerezo N°17</p>
+
+            <h5>Téléphones</h5>
+            <p>+243 995 654 626 / +243 999 739 583<br>+243 851 433 199 / +243 810 800 702</p>
+
+            <h5>Email</h5>
+            <p><a href="mailto:sumaasbl@gmail.com">sumaasbl@gmail.com</a></p>
+
+            <h5>Réseaux sociaux</h5>
+            <p>
+              <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="me-2"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="col-md-6">
+          <div class="card shadow-sm p-4 h-100">
+            <h5>Envoyez-nous un message</h5>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Envoyer</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer mt-5">
+    <div class="footer-overlay">
+      <div class="container py-5">
+        <div class="row text-white">
+          <!-- Colonne 1: À propos -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">À propos</h5>
+            <p class="small">
+              SUMA ASBL — Sote Kwa Umoja Maendeleo Na Amani<br>
+              Unité, solidarité et paix durable.<br>
+              Nous œuvrons pour l’éducation, la santé et la sécurité alimentaire.
+            </p>
+          </div>
+
+          <!-- Colonne 2: Programmes -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Programmes</h5>
+            <ul class="list-unstyled small">
+              <li><a href="#programs" class="footer-link">Protection des enfants</a></li>
+              <li><a href="#programs" class="footer-link">Appui aux femmes</a></li>
+              <li><a href="#programs" class="footer-link">Veuves & vieillards</a></li>
+              <li><a href="#programs" class="footer-link">Jeunesse & développement</a></li>
+              <li><a href="#programs" class="footer-link">Éducation</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3: Contact -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Contact</h5>
+            <p class="small mb-1"><i class="fa fa-map-marker-alt me-2"></i>Goma, RDC</p>
+            <p class="small mb-1"><i class="fa fa-phone me-2"></i>+243 995 654 626</p>
+            <p class="small mb-1"><i class="fa fa-envelope me-2"></i>
+              <a href="mailto:sumaasbl@gmail.com" class="footer-link">sumaasbl@gmail.com</a>
+            </p>
+            <div class="mt-2">
+              <a href="#" class="footer-social me-2"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="footer-social me-2"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="footer-social"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center text-white mt-4 small">
+          © <span id="year"></span> SUMA ASBL — Tous droits réservés || Designed by <a href="#"
+            class="footer-link">Dorcas
+            Mbonyimbuga</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
+
 </html>
